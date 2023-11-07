@@ -60,3 +60,25 @@ def fib_bottom_up_better(n):
         prev, curr = curr, next_fib
 
     return curr
+
+
+def fib_recursive(n, counts):
+   
+    counts[n] += 1
+    
+    # Base cases
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    # Recursive case
+    return fib_recursive(n - 1, counts) + fib_recursive(n - 2, counts)
+
+def test_fib_recursive(n):
+    counts = [0] * (n + 1)
+    result = fib_recursive(n, counts)
+    print(f"The {n}-th Fibonacci number is: {result}")
+    for i in range(n + 1):
+        print(f"Fib({i}) was computed {counts[i]} times")
+
