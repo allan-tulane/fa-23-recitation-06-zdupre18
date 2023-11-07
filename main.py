@@ -53,7 +53,13 @@ def fib_bottom_up(n):
 
     return fibs[n]
 
+def test_fib_bottom_up(n):
+    result = fib_bottom_up(n)
+    print(f"The {n}-th Fibonacci number is: {result}")
 
+
+n = 5  # The Fibonacci number 
+test_fib_bottom_up(n)
 
 
 def fib_bottom_up_better(n):
