@@ -31,6 +31,14 @@ def fib_top_down(n, fibs):
 
     return fibs[n]
 
+def test_fib_top_down(n):
+    fibs = [-1] * (n + 1)  
+    result = fib_top_down(n, fibs)
+    print(f"The {n}-th Fibonacci number is: {result}")
+
+
+n = 5  #
+test_fib_top_down(n)
 
 def fib_bottom_up(n):
     ###TODO
