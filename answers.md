@@ -32,7 +32,7 @@ for count the pattern follows as a small number like 0-3 the count lists how man
 
   max time I am called is 2
 work - O(n) = because of the number of recursive calls the work is proportional to num of Fibonacci calculated since its linear
-span - the span is focused on the recursive call in the tree since the max is 2 for i the span would be O(1) since the tree depth would be n
+span - the span is focused on the recursive call in the tree since the max is 2 for i the span would be O(N) since the tree depth would be n
 - **8)**
   fib is only read once since it initializes and then loops and stores each fib number once and then stored in the fib list -- since the algorithm reads from the fibs list.
   work - O(N) = calculated fib number once and it's linear since the calculations are fib number and then stored
